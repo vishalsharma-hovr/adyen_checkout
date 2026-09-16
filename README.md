@@ -35,4 +35,4 @@ await AdyenCheckout.startApplePay(
 
 ## Local development
 
-Develop under `~/Documents/hovr-packages/adyen_checkout` and path-override from the host app. See [LOCAL_DEVELOPMENT.md](doc/LOCAL_DEVELOPMENT.md).
+Develop under `~/Documents/packages/adyen_checkout` and path-override from the host app. See [LOCAL_DEVELOPMENT.md](doc/LOCAL_DEVELOPMENT.md).

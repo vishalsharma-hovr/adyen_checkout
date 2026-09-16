@@ -3,7 +3,7 @@
 ## Location
 
 ```text
-~/Documents/hovr-packages/adyen_checkout/
+~/Documents/packages/adyen_checkout/
 ```
 
 ## Host app path override
@@ -13,12 +13,12 @@ In the host app `pubspec.yaml`:
 ```yaml
 dependencies:
   adyen_checkout:
-    path: ../../../Documents/hovr-packages/adyen_checkout
+    path: ../../../Documents/packages/adyen_checkout
 
 # Or keep a Git dep and override:
 # dependency_overrides:
 #   adyen_checkout:
-#     path: ../../../Documents/hovr-packages/adyen_checkout
+#     path: ../../../Documents/packages/adyen_checkout
 ```
 
 Adjust the relative path to match your app’s location under `StudioProjects/`.
@@ -32,7 +32,7 @@ fvm flutter pub get
 ## Plugin example
 
 ```bash
-cd ~/Documents/hovr-packages/adyen_checkout
+cd ~/Documents/packages/adyen_checkout
 fvm flutter pub get
 fvm flutter test
 cd example && fvm flutter pub get

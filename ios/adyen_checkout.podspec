@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Config-driven Flutter plugin for Adyen Sessions card, Google Pay, and Apple Pay.
                        DESC
-  s.homepage         = 'https://example.com/adyen_checkout'
+  s.homepage = 'https://github.com/vishalsharma-hovr/adyen_checkout'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'adyen_checkout' => 'dev@example.com' }
   s.source           = { :path => '.' }
