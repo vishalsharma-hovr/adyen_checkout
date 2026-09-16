@@ -1,0 +1,20 @@
+{
+  "clientKey": "test_YOUR_CLIENT_KEY",
+  "environment": "test",
+  "merchantAccount": "YOUR_MERCHANT_ACCOUNT",
+  "merchantName": "Example Store",
+  "countryCode": "US",
+  "currencyCode": "USD",
+  "shopperLocale": "en-US",
+  "applePay": {
+    "merchantIdentifier": "merchant.com.example.app"
+  },
+  "googlePay": {
+    "merchantName": "Example Store",
+    "allowedCardNetworks": ["AMEX", "DISCOVER", "JCB", "MASTERCARD", "VISA"]
+  },
+  "card": {
+    "holderNameRequired": false,
+    "storePaymentFieldVisible": true
+  }
+}
