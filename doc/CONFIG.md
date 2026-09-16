@@ -29,7 +29,7 @@ flutter:
   "clientKey": "test_YOUR_CLIENT_KEY",
   "environment": "test",
   "merchantAccount": "YOUR_MERCHANT_ACCOUNT",
-  "merchantName": "Example Store",
+  "merchantName": "Your Store",
   "countryCode": "US",
   "currencyCode": "USD",
   "shopperLocale": "en-US",
@@ -37,7 +37,7 @@ flutter:
     "merchantIdentifier": "merchant.com.example.app"
   },
   "googlePay": {
-    "merchantName": "Example Store",
+    "merchantName": "Your Store",
     "allowedCardNetworks": ["AMEX", "DISCOVER", "JCB", "MASTERCARD", "VISA"]
   },
   "card": {

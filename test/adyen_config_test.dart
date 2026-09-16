@@ -9,12 +9,12 @@ void main() {
   "clientKey": "test_abc",
   "environment": "test",
   "merchantAccount": "YOUR_MERCHANT_ACCOUNT",
-  "merchantName": "Example Store",
+  "merchantName": "Your Store",
   "countryCode": "US",
   "currencyCode": "USD",
   "shopperLocale": "en-US",
   "applePay": { "merchantIdentifier": "merchant.com.example.app" },
-  "googlePay": { "merchantName": "Example Store" },
+  "googlePay": { "merchantName": "Your Store" },
   "card": { "holderNameRequired": true, "storePaymentFieldVisible": false }
 }
 ''';
@@ -32,11 +32,11 @@ void main() {
 {
   "clientKey": "test_abc",
   "environment": "test",
-  "merchantName": "Example Store",
+  "merchantName": "Your Store",
   "countryCode": "US",
   "currencyCode": "USD",
   "applePay": { "merchantIdentifier": "merchant.com.example.app" },
-  "googlePay": { "merchantName": "Example Store" }
+  "googlePay": { "merchantName": "Your Store" }
 }
 ''';
       expect(() => AdyenConfig.fromJson(json), throwsA(isA<AdyenConfigException>()));
