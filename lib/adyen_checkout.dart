@@ -1,5 +1,3 @@
-library adyen_checkout;
-
 export 'src/adyen_checkout.dart';
 export 'src/config/adyen_config.dart';
 export 'src/config/adyen_config_exception.dart';

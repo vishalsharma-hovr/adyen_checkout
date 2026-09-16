@@ -231,7 +231,7 @@ class AdyenConfig {
   }) {
     return {
       ...toCreationParams(sessionId: sessionId, sessionData: sessionData),
-      if (amountMinorUnits != null) 'amountMinorUnits': amountMinorUnits,
+      'amountMinorUnits': ?amountMinorUnits,
     };
   }
 }
