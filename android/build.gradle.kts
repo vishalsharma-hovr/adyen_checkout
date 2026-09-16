@@ -2,7 +2,7 @@ group = "dev.adyen_checkout.adyen_checkout"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    val kotlinVersion = "2.0.21"
+    val kotlinVersion = "2.1.0"
     repositories {
         google()
         mavenCentral()
@@ -22,14 +22,16 @@ allprojects {
     }
 }
 
-apply(plugin = "com.android.library")
-apply(plugin = "kotlin-android")
-apply(plugin = "org.jetbrains.kotlin.plugin.compose")
+plugins {
+    id("com.android.library")
+    id("kotlin-android")
+    id("org.jetbrains.kotlin.plugin.compose")
+}
 
 android {
     namespace = "dev.adyen_checkout.adyen_checkout"
 
-    compileSdk = 35
+    compileSdk = 36
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
