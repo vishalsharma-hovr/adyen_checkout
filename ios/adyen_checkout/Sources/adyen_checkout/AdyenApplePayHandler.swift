@@ -1,5 +1,17 @@
 import UIKit
 import Adyen
+#if canImport(AdyenActions)
+import AdyenActions
+#endif
+#if canImport(AdyenCard)
+import AdyenCard
+#endif
+#if canImport(AdyenComponents)
+import AdyenComponents
+#endif
+#if canImport(AdyenSession)
+import AdyenSession
+#endif
 import PassKit
 import Flutter
 import os.log

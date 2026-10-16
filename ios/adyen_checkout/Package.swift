@@ -11,11 +11,20 @@ let package = Package(
     products: [
         .library(name: "adyen-checkout", targets: ["adyen_checkout"])
     ],
-    dependencies: [],
+    dependencies: [
+        // Matches the podspec (Adyen ~> 5.22.2).
+        .package(url: "https://github.com/Adyen/adyen-ios", .upToNextMinor(from: "5.22.2")),
+    ],
     targets: [
         .target(
             name: "adyen_checkout",
-            dependencies: [],
+            dependencies: [
+                .product(name: "Adyen", package: "adyen-ios"),
+                .product(name: "AdyenActions", package: "adyen-ios"),
+                .product(name: "AdyenCard", package: "adyen-ios"),
+                .product(name: "AdyenComponents", package: "adyen-ios"),
+                .product(name: "AdyenSession", package: "adyen-ios"),
+            ],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it uses any required
                 // reason APIs, update the PrivacyInfo.xcprivacy file to describe your plugin's

@@ -2,6 +2,18 @@ import Foundation
 import UIKit
 import Flutter
 import Adyen
+#if canImport(AdyenActions)
+import AdyenActions
+#endif
+#if canImport(AdyenCard)
+import AdyenCard
+#endif
+#if canImport(AdyenComponents)
+import AdyenComponents
+#endif
+#if canImport(AdyenSession)
+import AdyenSession
+#endif
 
 final class AdyenCardViewFactory: NSObject, FlutterPlatformViewFactory {
     private let messenger: FlutterBinaryMessenger
