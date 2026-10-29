@@ -15,7 +15,7 @@ Future<AdyenSessionResult?> showAdyenCardDropIn(
   return showModalBottomSheet<AdyenSessionResult>(
     context: context,
     isScrollControlled: true,
-    backgroundColor: Colors.white,
+    backgroundColor: Theme.of(context).colorScheme.surface,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
     ),
@@ -39,7 +39,10 @@ Future<AdyenSessionResult?> showAdyenCardDropIn(
                 onError: (message) {
                   Navigator.pop(
                     sheetContext,
-                    AdyenSessionResult(resultCode: 'Error', raw: {'message': message}),
+                    AdyenSessionResult(
+                      resultCode: 'Error',
+                      raw: {'message': message},
+                    ),
                   );
                 },
               ),
